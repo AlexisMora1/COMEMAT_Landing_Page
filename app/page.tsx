@@ -1,12 +1,9 @@
 import { Button } from './components/button'
 import Link from "next/link"
-import NavBar from './components/header'
 import Article from './components/articles'
-import Footer from './components/footer'
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
-      <NavBar/>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
@@ -31,14 +28,14 @@ export default function Component() {
               <Article article={{title:"Conjuntos densos",date:"Ene 10 2025",topic:"Topologia"}}/>
               <Article article={{title:"Ejemplos de algebras no conmutativas",date:"Feb 23 2024",topic:"Algebra abstracta"}}/>
             </div>
-            <h2 className="text-2xl font-bold mb-4">Quienes somos</h2>
-            <p className="text-gray-500 mb-8">
-              Somos un grupo de estudiantes de matemáticas que buscan la difusión de los trabajos realizados por alumnos de la FCFM.
-            </p>
+            <h2 className="text-2xl font-bold mb-4">Cursos destacados</h2>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <Article article={{title:"Tecnicas de integracion",date:"Ene 10 2025",topic:"Calculo"}}/>
+              <Article article={{title:"Regla de la cadena",date:"Feb 23 2024",topic:"Calculo"}}/>
+            </div>
           </div>
         </section>
       </main>
-      <Footer/>
     </div>
   )
 }

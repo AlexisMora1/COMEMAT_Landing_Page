@@ -1,6 +1,6 @@
 import { Calendar, BookMarked } from "lucide-react"
 
-export default function Article({article}){
+export default function Article({article}:{article:{title: string, date:string,topic:string}}){
     function onclick(){
 
     }
