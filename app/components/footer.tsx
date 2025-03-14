@@ -17,7 +17,7 @@ export default function Footer(){
             <Mail className="h-5 w-5" />
             <span className="sr-only">Email</span>
           </Link>
-          <Link href="#" className="text-gray-500 hover:text-gray-600">
+          <Link href="https://www.facebook.com/COMEMAT" className="text-gray-500 hover:text-gray-600">
             <svg
               className=" h-5 w-5"
               fill="currentColor"
